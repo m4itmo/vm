@@ -1,6 +1,41 @@
 ## 1
 Исследовать сходимость числовых рядов.
 
+### b
+Исходный ряд:
+
+$$
+\sum_{n=1}^\infty \frac{1 \cdot 4 \cdot \ldots \cdot (3n - 2)}{7 \cdot 9 \cdot \ldots \cdot (2n + 5)}
+$$
+
+Обозначим общий член ряда:
+
+$$
+u_n = \frac{1 \cdot 4 \cdot \ldots \cdot (3n - 2)}{7 \cdot 9 \cdot \ldots \cdot (2n + 5)}
+$$
+
+Применим признак Даламбера для нахождения сходимости ряда:
+
+$$
+\lim_{n \to \infty} \frac{u_{n+1}}{u_n} = \lim_{n \to \infty} \frac{1 \cdot 4 \cdot \ldots \cdot (3n - 2) \cdot (3n + 1)}{7 \cdot 9 \cdot \ldots \cdot (2n + 5) \cdot (2n + 7)} \cdot \frac{7 \cdot 9 \cdot \ldots \cdot (2n + 5)}{1 \cdot 4 \cdot \ldots \cdot (3n - 2)} =
+$$
+
+$$
+= \lim_{n \to \infty} \frac{1 \cdot 4 \cdot \ldots \cdot (3n - 2) \cdot (3n + 1)}{1 \cdot 4 \cdot \ldots \cdot (3n - 2)} \cdot \frac{7 \cdot 9 \cdot \ldots \cdot (2n + 5)}{7 \cdot 9 \cdot \ldots \cdot (2n + 5) \cdot (2n + 7)} =
+$$
+
+$$
+= \lim_{n \to \infty} \frac{(3n + 1)}{(2n + 7)} = \lim_{n \to \infty} \frac{3n}{2n} = \frac{3}{2}
+$$
+
+$$
+\lim_{n \to \infty} \frac{u_{n+1}}{u_n} = \frac{3}{2} > 1
+$$
+
+Ряд $\sum_{n=1}^\infty \frac{1 \cdot 4 \cdot \ldots \cdot (3n - 2)}{7 \cdot 9 \cdot \ldots \cdot (2n + 5)}$ ==расходится== по признаку Даламбера, так как $\lim_{n \to \infty} \frac{u_{n+1}}{u_n} > 1$
+
+
+
 ## 2
 Найти область сходимости функционального ряда.
 
